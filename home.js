@@ -132,3 +132,53 @@ for (let num = 0; num < 10; num++) {
 }
 console.log(emptyArray);
 
+// Objects in Javascript
+// dictionaries in Python
+
+let student = {
+    first: 'BIG',
+    last: 'CHIEF',
+    age: 777,
+    height:9.5,
+    studentInfo: function (){
+        return this.first + '\n' + this.last + '\n' + this.age;
+        }
+
+};
+console.log(student.first);
+console.log(student.last);
+student.first = 'notMortal';
+console.log(student.first);
+
+console.log(student.studentInfo());
+
+// Conditionals, Control frows (if else)
+// 25-45 is my target demographic
+//&& AND
+// || OR
+var age = 30
+
+if((age >=18) && (age <= 35)) {
+    status = 'target demo';
+    console.log(status);
+} else{
+    status = 'not my audience';
+    console.log(status);
+}   
+//Switch statements
+//differentiate between weekday vs weekend
+// day 0 --> Sunday
+// day 6 --> Saturday
+// day 4 --> Thurday --> weekday
+
+switch (6) {
+    case 0:
+        text ='weekend';
+        break;
+    case 6:
+        text = 'weekend';
+        break;
+        default:
+            text = 'weekday';
+}
+console.log(text);
