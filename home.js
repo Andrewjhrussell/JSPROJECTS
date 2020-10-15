@@ -70,3 +70,27 @@ while (num < 100) {
 for (let num = 0; num < 100; num++) {
     console.log(num);
 }
+
+//Data types
+let yourAge = 18;                               //number
+let youName = 'Bob';                            // string
+  
+let truth = false;                             // boolean
+let groceries = ['apple','banana','oranges']; // array
+let random; //undefined
+let nothing = null;                           // value null
+
+//Strings in Javascript (common methods)
+let fruit = 'banana';
+let moreFruits = 'banana\apple'
+console.log(moreFruits);                    //new line
+console.log(fruit.indexOf('a'))
+console.log(fruit.length);
+console.log(fruit.slice(2, 6));
+console.log(fruit.replace('ban', '123'));
+console.log(fruit.toUpperCase(fruit));
+console.log(fruit.toLowerCase(fruit));
+console.log(fruit[2]);
+console.log(fruit.split(''));
+console.log(fruit.split(','));
+
