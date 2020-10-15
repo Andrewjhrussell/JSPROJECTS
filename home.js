@@ -94,3 +94,41 @@ console.log(fruit[2]);
 console.log(fruit.split(''));
 console.log(fruit.split(','));
 
+
+//Array
+let fruits = ['banana', 'apple', 'orange', 'pineapples'];
+fruits= new Array('banana', 'apple', 'orange', 'pineapples');
+
+console.log(fruits[2]); //access value at index 2nd
+
+fruits[0] = 'pear';
+console.log(fruits); 
+
+
+for (let i =0; i < fruits.length; i++) {
+    console.log(fruits[i]);
+}
+
+//array common methods
+console.log('to string', fruits.toString());
+console.log(fruits.join('*'));
+console.log(fruits.pop(), fruits);
+console.log(fruits.push('blackberries'),fruits); //appends
+
+let vegetables = ['asparagus', 'tomato', 'broccoli'];
+let allGroceries = fruits.concat(vegetables);
+console.log(allGroceries);
+console.log(allGroceries.slice(1, 4));
+console.log(allGroceries.reverse());
+
+let someNumbers = [5, 33, 3, 88, 9, 1, 0, 758, 777];
+console.log(someNumbers.sort());
+console.log(someNumbers.sort(function(a, b) {return a-b}));
+console.log(someNumbers.sort(function(a, b) {return b-a}));
+
+let emptyArray = new Array();
+for (let num = 0; num < 10; num++) {
+    emptyArray.push(num);
+}
+console.log(emptyArray);
+
